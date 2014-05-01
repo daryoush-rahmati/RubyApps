@@ -1,0 +1,30 @@
+
+<table style="width: 100%">
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+
+        <td class="post">
+          <%= post.body %>
+          <br/>
+
+        </td>
+
+        <!--<td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+
+    <% end %>
+  <br/>
+
+
+  </tbody>
+</table>
+
+<br>
+
+<div class="post">
+
+  <%= link_to 'پست جدید', new_post_path %>
+</div>

@@ -1,0 +1,157 @@
+body
+{
+  background-color: white;
+  font-family: 'B Yekan';
+  font-size: 11pt;
+}
+#layout{
+  width: 1100px;
+  background-color: dimgrey;
+  height: 900px;
+
+}
+.header
+{
+  background-color: #000000;
+  border-radius: 3px;
+  padding-bottom: 7px;
+  padding-top: 10px;
+  height: 25px;
+  text-align: right;
+  width: 100%;
+
+}
+
+#main{
+  width: 100%;
+  background-color: gray;
+  overflow-y: true;
+}
+
+.right-panel{
+  font-family:'B Yekan';
+  width: 65%;
+  padding: 10px;
+  float: right;
+  direction: rtl;
+  text-align: right;
+  font-size:12pt;
+  color: #000000;
+  margin:10px;
+}
+.left-panel{
+  text-align: right;
+  direction: rtl;
+  padding: 10px;
+  float:left;
+  height: 200px;
+}
+.link-btn{
+  width:150px;
+  padding:4px;
+  margin: 2px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: #f7a883;
+}
+.link-btn:hover{
+   background-color: bisque;
+ }
+a.menu{
+  text-decoration: none;
+  color:white;
+}
+a.menu:hover{
+  text-decoration: none;
+  color: white;
+}
+a.menu:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.post{
+  width: 100%;
+  direction: rtl;
+  text-align: justify;
+  text-align-last: right;
+  color: #000000;
+  margin-right: 10px;
+  border-radius: 5pt;
+  padding-right: 10px;
+  background-color: ButtonHighlight;
+
+  padding: 2pt;
+  opacity: 1;
+}
+.author{
+  color: Black;
+  padding-right: 20px;
+  font-family: 'tahoma';
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+
+#main-page-layout{
+  margin-top: 50px;
+  width: 1000px;
+  height: 670px;
+  border-radius: 5pt;
+  background-image: url('./url3.jpg')
+}
+#main-page-table{
+  width: 100%;
+}
+.main-page-left{
+  text-align: right;
+  width: 20%;
+  border-radius: 5pt;
+  padding-top: 0px;
+  padding-left: 10px;
+}
+.main-page-right{
+  text-align: right;
+  width: 80%;
+  border-radius: 5pt;
+  padding: 10px;
+}
+.main-page-right-img{
+  text-align: right;
+  width: 10%;
+  border-radius: 5pt;
+  padding: 20px;
+}
+.main-page-special-td{
+  background-color: #000000;
+  opacity: 0.9;
+  width: 100%;
+  border-radius: 5pt;
+  padding: 10px;
+  margin: 10px;
+}
+.td-main-menu{
+  color:white;
+  border-radius: 5pt;
+  padding: 3px;
+}
+.td-main-menu:hover{
+  background-color: gray;
+}
+
+#main-posts{
+  width: 97%;
+  height: 300px;
+  font-family: 'tahoma';
+  text-align:justify;
+  text-justify:inter-word;
+  opacity: 1;
+  border-radius: 5pt;
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 35px;
+  margin-left: 20px;
+  overflow-y:scroll;
+  overflow-x: none;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PersonalPage</title>
+
+
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body >
+<center>
+    <div id="main-page-layout">
+      <table id="main-page-table">
+       <tr>
+        <td class="main-page-left">
+
+          <div class="main-page-special-td">
+            <table style="width: 100%">
+              <tr><td class="td-main-menu"><a class="menu" href="#">صفحه اصلی</a></td></tr>
+              <tr><td class="td-main-menu"><a class="menu" href="#">مشخصات آکادمیک</a></td></tr>
+              <tr><td class="td-main-menu"><a class="menu" href="#">مشخصات عملی</a></td></tr>
+            </table>
+          </div>
+        </td>
+        <td  class="main-page-right">
+
+          <table>
+            <tr>
+              <td>
+                <div class="right-panel">
+
+                  <div style="font-size: 32px">جمشید کاشانی</div>
+                  <div>کارشناس ارشد مهندسی نرم افزار، گرایش نرم افزار</div>
+                  <div>کارشناس نرم افزار، دانشگاه لندن</div>
+
+                  <div>تلفن:  23 25 214 21 98+</div>
+
+                </div>
+              </td>
+              <td class="main-page-right-img">
+                <%= image_tag("1.jpg",  size: "100X150") %>
+              </td>
+
+            </tr>
+          </table>
+         <!-- <%= image_tag("graduate-member.jpg",  size: "300x230" ,) %> -->
+        </td>
+       </tr>
+      </table>
+
+        <table style="width: 100%">
+          <tr >
+            <td style="width: 70%; background-color: ButtonHighlight;">
+              <div id="main-posts">
+              <%= yield %>
+              </div>
+            </td>
+
+
+
+          </tr>
+        </table>
+
+
+    </div>
+
+
+  <!--
+  <div id="layout">
+    <div class="header">
+      <div style="{padding-right: 100px;}">
+        <span class="link-btn"><a href="#">صفحه اصلی</a> </span>
+        <span class="link-btn"><a href="#">سوابق آکادمیک</a> </span>
+        <span class="link-btn"><a href="#">سوابق عملی</a> </span>
+      </div>
+    </div>
+    <br/>
+    <div class="right-panel">
+
+      <div>جمشید کاشانی</div>
+      <div>کارشناس ارشد مهندسی نرم افزار، گرایش نرم افزار</div>
+      <div>کارشناس نرم افزار، دانشگاه لندن</div>
+      <div>something@email.com</div>
+      <div>tel: +98 985 625 32, +98 3265 235</div>
+
+    </div>
+    <div class="left-panel">
+      <%= image_tag("graduate-member.jpg",  size: "300x230") %>
+    </div>
+    <div id="main">
+
+    </div>
+
+    <div style="background-color: darkgray">
+
+    </div>
+  </div>
+-->
+</center>
+
+
+
+</body>
+</html>

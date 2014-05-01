@@ -1,0 +1,28 @@
+<% @mypost = Post.new %>
+<%= form_for(@mypost) do |f| %>
+  <% if @mypost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mypost.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @mypost.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="post">
+نویسنده<br>
+    <%= f.text_field :title , :maxlength => 15, :size => 40 %>
+  </div>
+  <div style="direction: rtl">
+    متن<br>
+    <%= f.text_area :body , :rows => 5,
+                    :cols => 80  %>
+  </div>
+    <br/>
+  <div style="direction: rtl;">
+    <%= submit_tag("افزودن")%>
+  </div>
+<% end %>
